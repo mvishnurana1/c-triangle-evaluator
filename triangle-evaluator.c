@@ -20,11 +20,7 @@ int getInput(){
 }
 
 int SideSumProperty(int x, int y, int z){
-    if((x + y >= z) && (x + z >= y) && (y + z >= x)){
-        return 5; 
-    } else {
-        return 1; 
-    }
+    return ((x + y >= z) && (x + z >= y) && (y + z >= x));
 }
 
 char* evaluation(int x, int y, int z){
@@ -41,7 +37,7 @@ char* evaluation(int x, int y, int z){
 }
 
 void resultGenerator(int result, int x, int y, int z){
-    if(result == 5){
+    if(result){
         printf("%s \n", evaluation(x, y, z));
     } else {
         printf("Does n't make a triangle...\n"); 
