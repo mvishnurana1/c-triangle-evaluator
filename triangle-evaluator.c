@@ -1,8 +1,7 @@
 // the program takes 3 integers and checks if 
 // they make a triangle or not. 
-// If yes, the program evaluates the kind of triangle
-// it makes. 
-// please follow the "Triangle Side Sum Propertside2..." 
+// If yes, the program evaluates the type. 
+// please follow the "Triangle Side Sum Property..." 
 // the three types are: 
 // equilateral   i.e. - if all three sides are equal. 
 // isosceles     i.e. - if any two sides are equal. 
@@ -24,7 +23,7 @@ int getInt(){
  * Sum of any two sides is always greater than the third side:  
  * The method returns a boolean on execution
  */ 
-int SideSumPropertside2(int side1, int side2, int side3){
+int SideSumProperty(int side1, int side2, int side3){
     return ( 
                    (side1 + side2 >= side3) &&
                    (side1 + side3 >= side2) && 
@@ -74,7 +73,7 @@ int main(){
     int side2 = getInt(); 
     int side3 = getInt(); 
 
-    int result = SideSumPropertside2(side1, side2, side3);
+    int result = SideSumProperty(side1, side2, side3);
 
     resultGenerator(result, side1, side2, side3); 
     return 0;  
